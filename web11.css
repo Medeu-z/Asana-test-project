@@ -1,0 +1,516 @@
+        body{
+        background-color: hsl(0, 0%, 95%);
+
+        }
+        .prof{
+        
+        }
+        .topicP{
+        	font-size: 3vw;
+        }
+        .topP{
+        	font-size: 1.5vw;
+        	padding-right: 15%;
+        }
+        .fl{
+        	
+        	display: flex;
+        	display: inline-flex;
+        }
+        .hrs{
+        	width: 30%;
+        	color: black;
+        	background-color: black;
+        	 height: 0.2px;
+        	 margin-left: 1px;
+        }
+		.inContainer{
+			position: fixed;
+            top: 0;
+            width: 100%;
+			display: flex;
+			background-color: hsla(0, 0%, 100%, 0.8);
+            padding: 10px 10% 10px 10%;
+            box-shadow:  0 2px 3px hsl(0, 0%, 85%);
+        }
+            .button12, #c22{
+            	display: flex;
+            	justify-content: flex-end;
+                width: 100%;
+            	padding: 5px;
+            }
+            .button1{
+			
+			background-color: #4F1AC6;
+			color: white;}
+          
+		#button1{
+			/*font-size: 1vw;*/
+			background-color: #4F1AC6;
+			color: white;}
+		#button2{
+			/*font-size: 1vw;*/
+			margin-left: 10px;
+			border: 1.5px solid #4F1AC6;
+			background-color: white;
+			color: #4F1AC6;}
+			.first{
+				/*margin-left: 5%;*/
+				width: 100%;
+				height: 10%;
+				margin-top: 100px;
+				padding: 50px;
+			
+			}
+			#togglePassword {
+  			margin-top: 5px;
+            margin-left: -25px;
+            cursor: pointer;
+         }
+			.word{
+
+				width: 40%;
+				font-family:  Helvetica, sans-serif;
+				
+			
+			}
+			.img{
+				width: 60%;
+				height: 100%;
+			}
+			.b button{background-color: white;
+				       color: black;
+
+				   }
+
+				.fr{display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+				}
+				@media only screen and (max-width: 600px) {
+					.wrb{
+						display: flex;
+						flex-direction: column;
+					}
+					.b{  display: flex;
+						flex-direction: column;
+					}
+					#obj, #map{
+						display: none;
+						margin-bottom: 100px;
+					}
+              }
+              
+		.inContainer1{
+			margin: 100px 0 50px 0;
+			display: flex;}
+		.class1{
+			border-radius: 4px;
+			box-shadow:  0 2px 3px hsl(0, 0%, 85%);
+			width: 70%;
+			height: 60%;
+			background-image: url('ass3.png');
+			padding-top: 30px;
+			margin-bottom: 20px;
+		    }
+			/*.case(@i:1) when (@i < 3) {
+            #c-@{i} {
+              background-color: white;
+              box-sizing: border-box;
+              }
+           .case(@i + 1); 
+              }
+           .case(1);*/
+
+		#c1{
+			box-shadow:  0 2px 3px hsl(0, 0%, 85%);
+			margin-bottom: 90px;
+			background-color: white;
+			height: 80%;
+			width: 50%;
+			padding: 20px 28px;
+			box-sizing: border-box;}
+		    #c1 h4{
+			font-size: 25px;}
+			#vw{
+            font-size: 14px;
+			}
+
+		#c2{
+			width: 100%;
+			height: 40px;
+			background-color: white;
+			padding-top: 5px;
+			display: flex-inline;
+			box-sizing: border-box;}
+		#c2 h6{ 
+            margin-left: 40px;
+			color: #11CDCF ;
+			font-size: 13px;}
+		#c2 i{
+        
+         margin-right: 3px;
+         font-size: 12px;}
+         #c22{
+         	margin-top: -20px;
+         }
+        
+		.some{
+			font-size: 12px; 
+			color: lightgrey}
+		#id1{
+			margin-right: 3px;
+			margin-left:15px;}
+		.some1{
+			border-radius: 5px;
+			background-color: white;
+			box-shadow:  0 2px 3px hsl(0, 0%, 85%);
+			height: 240px;
+			width: 350px;
+			margin-left: 30px;
+			padding-left: 30px;}
+		.some1 p{
+		     font-size: 15px;
+			color: grey;}
+		#b2{/*less .button1;*/
+			background-color: #4F1AC6;
+			width: 90%;
+			height: 15%;
+			color: white;}
+		#b1{
+			background-color: white;
+			width: 90%;
+			height: 15%;
+			border: 2px solid #E6E2F3;
+			margin-bottom: 15px;}
+
+			/*less .button1;*/
+		#b3{
+			background-color: #4F1AC6;
+			width: 150px;
+			height: 35px;
+			color: white;}
+			.class3{
+
+				text-align: center;
+			}
+		.class31{
+        	
+			padding-right: 25px;
+          
+           margin-bottom: 20px;}
+           .ch6{
+           	  margin-left: 12px;
+           	  margin-top: 2px;
+           }
+          
+           #mixin-class{
+           	 border-radius: 5px 5px 0px 0px;
+			margin-top: 0px;
+			margin-bottom: 25px;
+			margin-left: -30px;
+			height: 5px;
+			width: 350px;
+           }
+          /* hr(){border-radius: 5px 5px 0px 0px;
+			margin-top: 0px;
+			margin-bottom: 25px;
+			margin-left: -30px;
+			height: 5px;
+			width: 350px;}*/
+
+		#class2{
+			/*.hr;*/
+            border-radius: 5px 5px 0px 0px;
+			margin-top: 0px;
+			margin-bottom: 25px;
+			margin-left: -30px;
+			height: 5px;
+			width: 350px;
+			background: linear-gradient(to right,#fc637b 0,#fa114c 50%,#f2990f 90%);}
+		#class3{
+			/*.hr;*/
+            border-radius: 5px 5px 0px 0px;
+			margin-top: 0px;
+			margin-bottom: 25px;
+			margin-left: -30px;
+			height: 5px;
+			width: 350px;
+			background: linear-gradient(to right,rgb(27, 231, 250) 0, rgb(32, 250, 235) 50%,rgb(7, 237, 180) 100%);}
+		
+		.inContainer2{
+			margin-right: 5%;
+			margin-left:-30px;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.cont2{
+			margin-bottom: 40px;
+			margin-left: 30px;
+			margin-right: 30px;
+			padding: 25px;
+			height: 530px;
+			width: 325px;
+			background-color: white;
+			box-shadow:  0 2px 3px hsl(0, 0%, 85%);}
+		.cont2 img{
+			 width: 275px;
+			 height: 200px;}
+		.cont2 hr{
+			margin:30px -25px 0px -25px;
+             color: lightgray;}
+		.cont22{
+			width: 325px;
+			height: 41px;
+			margin-left: -25px;
+			background-color: white;
+			padding-top: 10px;
+			display: flex;}
+		.cont22 h6{ 
+            margin-left: 40px;
+			color: #11CDCF ;
+			font-size: 13px;}
+		.cont22 i{
+            margin-left: 100px;
+            margin-right: 3px;
+         	font-size: 12px;}
+		.some2{
+			height: 135px;
+		 overflow: hidden;}
+		.lastC{
+			/*margin-right: 20px;*/
+			bottom: 0;
+			box-sizing: inherit;
+		/*	width: 100%;*/
+			display: flex;
+			justify-content: space-around;
+
+			background-color: hsla(237, 88%, 8%,90%);
+		/*	height: 20%;*/
+		   
+			padding-top: 65px;
+			padding-right: 100px;
+			padding-left: 100px;
+			font-size: 1.5vw;}
+			.lastC div{
+				margin-right: 5px;
+			}
+		.lastC svg{
+			margin-top: -20px;}
+		.lastC p{
+			color:hsl(0, 0%, 60%);}
+		
+  		.overlay1 {
+  			position: fixed;
+ 			display: none;
+  			width: 100%;
+  			height: 100%;
+  			top: 0;
+  			left: 0;
+  			right: 0;
+  			bottom: 0;
+  			background-color: RGBA(0,0,0,0.65);
+  			padding-top: 5%;
+  			padding-left: 15%;
+
+  		}
+  		.overlay1 input{
+  			
+  			margin-bottom: 10px;
+  			margin-left: 10px;
+  		}
+  		.overlay1 p{
+  			border:solid 0px white;
+  			width: 100px;
+  			margin-right: 50px;
+  			
+  		}.overlay2 {
+  			position: fixed;
+ 			display: none;
+  			width: 100%;
+  			height: 100%;
+  			top: 0;
+  			left: 0;
+  			right: 0;
+  			bottom: 0;
+  			background-color: RGBA(0,0,0,0.65);
+  			padding-top: 10%;
+  			padding-left: 20%;
+
+  		}
+  		.hrc{
+  			margin-top: -8px;
+  			
+  		}
+  		.overlay2 input{
+  			
+  			margin-bottom: 10px;
+  			margin-left: 10px;
+  		}
+  		.overlay2 p{
+  			border:solid 0px white;
+  			width: 100px;
+  			margin-right: 50px;
+  			
+  		}
+  		.w{
+  			display: flex;
+
+  		}
+  		.Container1{
+
+        padding-left: 10%;
+        padding-right: 1%;
+
+  		}
+  		.two ,.two1{
+  			display: flex;
+  			flex-wrap: wrap;
+  		}
+  		
+       @media only screen and (min-width: 1600px) {
+
+      .Container1{
+        padding-left: 15%;
+        padding-right: 5%;	}
+      .inContainer{
+  	    padding-left: 15%;
+        padding-right: 18%; }
+      }
+     @media only screen and (min-width: 1768px) {
+
+     .Container1{
+        padding-left: 20%;
+        padding-right: 15%;	}
+     .inContainer{
+  	    padding-left: 20%;
+        padding-right: 20%; }
+      } 
+    @media only screen and (min-width: 2000px) {
+ 
+      .Container1{
+  	    padding-left: 25%;
+        padding-right: 25%;}
+      .inContainer{
+  	    padding-left: 25%;
+        padding-right: 30%; }
+      } 
+    @media only screen and (min-width: 3000px) {
+	
+     .Container1{
+        padding-left: 35%;
+        padding-right: 32%;}
+    .inContainer{
+  	    padding-left: 35%;
+        padding-right: 35%; }
+     }
+     @media only screen and (min-width: 4000px) {
+    .inContainer{
+        padding-right: 45%;}
+  .Container1{
+        padding-right: 38%;}
+   }@media only screen and (max-width: 1400px) {
+ 
+  #c1 p{font-size: 1vw;
+  }
+  #c1 h4{
+  	font-size: 2vw;
+  }
+  .inContainer1{
+  	flex-wrap: wrap;
+  }
+   .inContainer2{
+  		margin-left: 30px;
+  }
+  .class1{
+  	margin-left: 30px;
+  }
+
+}@media only screen and (max-width: 900px){
+	#ch23 , #ch24{
+		width: 70%;
+		padding-top: 40px;
+	}
+	#class2,#class3{
+		display: none;
+	}
+	
+}
+@media only screen and (max-width: 600px) {
+ #c2 h6{font-size: 3vw;
+  }
+  #c1 p{font-size: 1vw;
+  }
+  #c1 h4{
+  	font-size: 2vw;
+  }
+  .inContainer1{
+  	flex-wrap: wrap;
+  }
+   .inContainer2{
+  		margin-left: -20px;
+  }
+  .class1{
+  	margin-left: 30px;
+  }
+  .two{
+  	display: none;
+  }
+  .lastC{ overflow: hidden;
+		  position: fixed;
+			width: 100%;}
+		#overlay1 {
+  			
+  			padding-top: 1%;
+  			
+
+  		}}
+#overlay {
+  			position: fixed;
+  			display: none;
+  			width: 375px;
+  			height: 310px;
+  			top: 50%;
+  			left: 0%;
+  			padding: 10px;
+  			background-color: RGBA(0,0,0,0.65);}
+  			#rec{
+			height:290px;
+            width:350px;}
+		#flip {
+      		height:290px;
+      		width:350px;
+      		background-image: url('rec2.png');
+     		background-size: 350px 290px;}
+        #flip1 {
+     		height:290px;
+       		width:350px;
+     	    background-image: url('rec1.png');
+      		background-size: 350px 290px;
+      		margin-top: -30px;
+    	    font-size: 0px; }
+        #div2,#div3,#div4{
+    		text-align: center;
+    		padding-top: 20px; }
+    	#flipLast{
+    		background-image: url('rec3.png');
+        	display: none;
+    		background-size: 350px 290px;
+    		height:260px;
+       	    width:350px;
+        	text-align: center;
+        	padding:65px 100px;
+        	color: black;
+        	font-size: 16px;}
+        	   #know{
+    		display: flex;
+    		justify-content: space-around;}
+        #know div{
+    		background-color: #f57170;
+    		width: 20px;
+    		height: 15px;}
+         #post{
+         	font-size: 4vw;
+         	font-family:  Helvetica;
+         }

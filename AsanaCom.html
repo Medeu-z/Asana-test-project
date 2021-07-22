@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="web11.css">
+
+	<title>Asana.com</title>
+
+   <script src="https://api-maps.yandex.ru/2.1/?apikey=3ea9a5b9-7313-42f2-ab67-4f6e246cd8f3 API key&lang=en_US" type="text/javascript">
+    </script>
+   
+    <script type="text/javascript">
+
+      function job(){
+          $("#lobList").toggle();
+         }
+    function jobApply(){
+      alert("We will send requirement for registration and other infotmations to your email!");
+    }
+    ymaps.ready(init);
+    function init(){ 
+    
+    
+        var map = new ymaps.Map("map", {
+            center: [37.8271772956237, -122.43710311200576],
+            zoom: 7
+        }),  MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+            '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+        ),
+
+        placemark = new ymaps.Placemark([37.78070633828101, -122.41607238373885], {
+            hintContent: 'San Francisco ',
+            balloonContent: 'Asana.blog Town - where you can achieve your dream!'
+        }, {
+            iconLayout: 'default#image',
+            iconImageHref: 'place.png',
+            iconImageSize: [50, 52],
+           
+       });
+        var polyline = new ymaps.Polyline([
+            [37.90070633828101, -122.30607238373885],
+            [37.90070633828101, -122.50607238373885],
+            [38.10070633828101, -122.35607238373885],
+            [37.70070633828101, -122.40607238373885]
+             
+        ], {
+            balloonContent: "Polyline"
+        }, {
+            strokeOpacity: 0.7,
+            strokeColor: "#006600",
+            strokeWidth: 2
+        });
+    rectangle = new ymaps.Rectangle([
+       [37.7271772956237, -122.03710311200576],
+       [38.1271772956237, -122.63710311200576]
+    ], {
+        hintContent: 'Location of Asana, Welcome!',
+        balloonContent: 'Asana.Blog-Rectangle'
+    }, {
+        fillColor: '#7df9ff33',
+        fillOpacity: 0.5,
+        strokeColor: '#0000FF',
+        strokeOpacity: 0.5,
+        strokeWidth: 2,
+        borderRadius: 5
+    });
+
+         map.geoObjects.add(placemark).add(polyline).add(rectangle);
+
+    }
+    function onDiv(){
+          $("#rmpo").toggle();
+          $("#mao").hide();
+           $("#sfo").hide();
+    }
+    function onDiv1(){
+          $("#mao").toggle();
+          $("#rmpo").hide();
+           $("#sfo").hide();
+    }
+    function onDiv2(){
+          $("#sfo").toggle();
+          $("#mao").hide();
+           $("#rmpo").hide();
+    }
+    function se(){
+      alert("We will send new password to your email!");
+    }
+
+</script>
+	<style> strong{
+      color:  #4F1AC6;
+    }
+    .imht h1{
+      font-size: 1.5vw;
+    }
+    .imht h4{
+      font-size: 1vw;
+    }
+    .imhtD{
+      width: 25%;
+      background-color: white;
+      border-radius: 10px;justify-content: center;text-align: center;padding: 5%;
+      margin-left: 5%;
+    
+    }</style>
+</head>
+<body>
+  
+	<div class="inContainer fl" style="margin-bottom: 200px;">
+	           <div><img src="ass1.png" height="35px" width="175px"></div>
+	          
+ </div>
+      <div style="margin-left: 1%;"><h1 class="topicP" style="text-align: center;margin-top: 100px;"><bdo dir="rtl">!ANASA ot moclleW</bdo></h1>
+             <audio style="margin-left: 38%; width: 20%;" controls>
+             <source src="au.ogg" type="audio/ogg"></audio></div>
+ <div class="first fl">
+     <div  class="word"><p class="topicP">About Us</p>
+        <hr class="hrs"><br>
+        <p class="topP">Asana is a web and mobile application designed to help teams organize, track, and manage their work.</p><br>
+    <address class="topP">
+         <b> Company :</b> <a href="https://asana.com/">Asana</a><br>
+         <b> CEO: </b><a href="https://en.wikipedia.org/wiki/Dustin_Moskovitz">Dustin Moskovitz</a><br>
+         <b> Founded:</b> 2008<br>
+          <b>Number of employees: </b>900<br>
+          <b>Revenue: </b>142.2 million USD (2019)<br>
+          <b>Headquarters:</b> San Francisco(2008), California(2009),<bdi> السعودية  </bdi>(2009), United States(2010)<br>
+       </address></div> 
+        <div class="img" id="map" style="width: 600px; height: 400px"></div>
+      </div>
+   <div class="first fl" >
+      	<div class="word">
+      		<p class="topicP" id="prod">Work on big ideas, without the busywork.</p>
+      		<hr class="hrs">
+      		<p class="topP">From the small stuff to the big picture, Asana organizes work so teams are clear what to do, why it matters, and how to get it done.</p>
+      	</div>
+      	<div class="img"><section>
+            <embed  class="slides" src="ascom.png" style="width: 100%;height: 100%;">
+            <embed class="slides" src="se4.png" style="width: 100%;height: 100%;">
+            <embed class="slides" src="se3.png" style="width: 100%;height: 100%;">
+            <embed class="slides" src="se2.jpg" style="width: 100%;height: 100%;"></section>
+        </div>
+   </div>
+     <div id="assup">  <h2 class="topP" style="margin-left: 40%;"> Asana Support</h2>
+      <hr class="hrs" style="width: 100%;">
+        <h3 style="margin-left: 37%;" class="topP">I'm having trouble with</h3><br>
+        <div style="display: flex;flex-wrap: wrap;">
+        <button  class="imhtD" onclick="onDiv()" >
+          <p class="topP">Resetting my password</p></button>
+          <button  class="imhtD" onclick="onDiv1()" >
+          <p class="topP">My account</p></button>
+           <button  class="imhtD" onclick="onDiv2()" >
+            <p class="topP">Still can't find an answer?</p>
+          </button></div>
+
+   
+<div id="rmpo" style="display: none; margin-left: 10%;" class="imht">
+             <hr><br>
+             <h1>01  How do I request a password reset link?</h1>
+             <h4>If you don't remember your password (or need to change it) <button onclick="se()"><strong >click here</strong></button> to reset it.</h4>
+              <br><hr>
+              <h1>02  I can’t find the password reset link</h1>
+              <h4>Check your Spam folder to ensure that the password reset link was not accidentally filtered there. If you still cannot find the link, contact our support team below.</h4><br><hr><br>
+              <h1 >03  My password reset link is expired</h1>
+              <h4 >For security reasons, our password reset links expire after a few hours of the initial request. If you’ve exceeded this time limit, try requesting another link here. If you are still having problems, contact our support team below.</h4>
+           </div>
+
+
+<div id="mao" style="display: none; margin-left: 10%;" class="imht">
+             <hr><br>
+             <h1>01  My email was removed from my account</h1>
+             <h4>You received this email because you were a Member of an Organization and were recently removed from the Organization, which in turn removed the company email address from your account. In free Organizations, all Members have the ability to remove other Members. In premium Organizations, the only the administrator can remove Members. If you feel this was done by mistake, just ask someone still in the Organization to invite you back in.</h4>
+              <br><hr>
+              <h1>02  I already have an account, but I’m stuck on the account creation screen</h1>
+              <h4>There are two likely scenarios. (1) You used Google login with an email address that had no Asana account, or (2) you have an account under one email address but were invited into Asana under another email address. If either of these are the case, just go through the account creation process and once you enter Asana, merge your two accounts together to resolve this issue.</h4><br><hr><br>
+           </div>
+
+            <div id="sfo" style="display: none;margin-left: 10%;" class="imht">
+                <hr><br>
+                 <h1>01  Communicate with a consultant</h1>
+                  <h4>This is the email of administration - <strong>asanaBlogCom@gmail.com</strong></h4>
+                  <br><hr>
+                </div></div>
+  <div class="first fl">
+      	<div class="word">
+      		<p  class="topicP">See who’s doing what and when</p>
+      		<hr class="hrs">
+      		<p class="topP">Bring your team’s goals, plans, tasks, files, and more together in one shared space. And view your work any way you want.</p><br><br>
+      		
+      	</div>
+      	<div class="img"><embed src="ex.jpeg" style="width: 100%;height: 100%;"></div>
+  </div>
+ <div class="fr">
+      	<div class="b">
+
+      		  <button  onclick="Autoplay()">Autoplay</button> 
+            <button  onclick="Controls()">Controls</button>
+            <button  onclick="Loop()">Loop</button> 
+            <button  onclick="Muted()">Muted</button>
+        </div><br>
+      	<div><video id="mv" width="200" height="200"  controls >
+              <source src="mv1.mp4" type="video/mp4">
+             </video></div>
+  </div>
+      <script> 
+           var x = document.getElementById("mv");
+           function Autoplay() {  if(x.autoplay){
+                          x.autoplay=false;
+                          x.load();}else{
+                          x.autoplay=true;
+                          x.load();}
+           } 
+           function Controls() {  if(x.controls){
+                          x.controls=false;
+                          x.load();}else{
+                          x.controls=true;
+                          x.load();}
+           }function Loop() {  if(x.loop){
+                          x.loop=false;
+                          x.load();}else{
+                          x.loop=true;
+                          x.load();}
+            }function Muted() {  if(x.muted){
+                          x.muted=false;
+                          x.load();}else{
+                          x.muted=true;
+                          x.load();}
+           } 
+ 
+     var myIndex = 0;
+     carousel();
+
+     function carousel() {
+             var i;
+             var x = document.getElementsByClassName("slides");
+             for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+             }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}
+           x[myIndex-1].style.display = "block";
+           setTimeout(carousel, 2800);
+           }
+
+           </script> 
+
+    <div class="first fl">
+      	<div class="word">
+      		<p class="topicP">Timeline</p>
+      		<hr class="hrs">
+      		<p class="topP">See how work maps out over time. Manage dependent, overlapping, and unscheduled tasks—and create plans your team can count on.</p><br><br>
+      	</div>
+      	<div class="word">
+      		<p class="topicP">Boards</p>
+      		<hr class="hrs">
+      		<p class="topP">Make it easy for your team to focus on tasks currently at hand. Define each stage of work to see what’s important and where things are getting stuck.</p><br><br>	
+      	</div>
+      	<div class="word">
+      		<p class="topicP">List view</p>
+      		<hr class="hrs">
+      		<p class="topP">Organize and assign tasks. With lists, teams see immediately what they need to do, which tasks are a priority, and when work is due.</p><br><br>
+      	</div>
+    </div>
+
+
+  <div><iframe width="100%" height="500px" src="https://www.youtube.com/embed/HpxUhepxQM8?autoplay=1&mute=1&playlist=HpxUhepxQM8&loop=1&controls=1"></iframe></div> 
+    
+
+
+   <div class="first fl " id="j">
+        <div class="word">
+          <p>Jobs</p>
+          <hr class="hrs">
+          <p class="topP">We strive to be the change we want to see in the workplace. Our goal is to be so inclusive that you are confident in being your true, authentic self at work every day.
+            <ul class="topP">
+            <li> <p>Building<strong> inclusive communities</strong> with <strong>Employee Resources Groups </strong> for underrepresented communities and allies</p></li>
+            <li><p><strong> Real Talk events</strong> provide a safe space to discuss current events, issues, and experiences</p></li>
+            <li><p>Proud to be a three-time Fortune <strong>Best Workplace for Women</strong>  and Comparably <strong>Best CEO for Diversity</strong></p> </li>
+            <li><p>We’re building a better way to work, fueled by transparency, trust, and technology that is a force for positive change in the world.</p></li></ul></p>
+  <button  type="button" id="button2" onclick="job()" class="btn btn-sm">Work List!</button>  
+        </div>
+       <script>
+
+       </script>
+          <div class="img"><embed src="sup.jpg" style="width: 90%;height: 90%;"></div>
+   </div> 
+     <div class="img" id="lobList" style="display: none;text-align: center;margin-left: 20%;" class="topP">
+                 <h2>Engineering & Data</h2><br><br>
+                 <p style="color: grey;">Develop quality code that is built for scale for millions of people looking to eliminate “work about work” with our platform. At Asana, you will be an integral part of the entire product development process, from Product to Mobile, to Infrastructure to Data Engineering teams.</p><br> 
+                 <h5>Data</h5> <br> 
+             <table class="table">
+    <thead>
+      <tr>
+        <th>Job</th>
+        <th>Country</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Data Engineer</td>
+        <td>San Francisco</td>
+        <td><button  type="button" id="button2" onclick="jobApply()" class="btn btn-sm">Apply Now</button></td>
+      </tr>
+      <tr>
+        <td>Data Scientist</td>
+        <td>San Francisco, New York City</td>   
+        <td><button  type="button" id="button2" onclick="jobApply()" class="btn btn-sm">Apply Now</button></td>   
+      </tr>
+      <tr>
+        <td>Software Engineer, Data Infrastructure</td>
+        <td>San Francisco</td>
+        <td><button  type="button" id="button2" onclick="jobApply()" class="btn btn-sm">Apply Now</button></td>
+      </tr>
+    </tbody>
+  </table><br>
+    <h5>Infrastructure Engineering</h5>  
+             <table class="table">
+    <tbody>
+      <tr>
+        <td>Engineering Manager, Infrastructure</td>
+        <td>San Francisco</td>
+        <td><button  type="button" id="button2" onclick="jobApply()" class="btn btn-sm">Apply Now</button></td>
+      </tr>
+      <tr>
+        <td>Engineering Manager, Security</td>
+        <td>Reykjavik</td>   
+        <td><button  type="button" id="button2" onclick="jobApply()" class="btn btn-sm">Apply Now</button></td>   
+      </tr>
+      <tr>
+        <td>Software Engineer, Security</td>
+        <td>San Francisco</td>
+        <td><button  type="button" id="button2" onclick="jobApply()" class="btn btn-sm">Apply Now</button></td>
+      </tr>
+    </tbody>
+  </table>
+   <h5>Product Engineering</h5>  
+             <table class="table">
+    <tbody>
+      <tr>
+        <td>Engineering Manager, Product</td>
+        <td>Vancouver, BC,New York City</td>
+        <td><button  type="button" id="button2" onclick="jobApply()" class="btn btn-sm">Apply Now</button></td>
+      </tr>
+      <tr>
+        <td>Head of Revenue Engineering</td>
+        <td>San Francisco</td>   
+        <td><button  type="button" id="button2" onclick="jobApply()" class="btn btn-sm">Apply Now</button></td>   
+      </tr>
+      <tr>
+        <td>Software Engineer, iOS</td>
+        <td>San Francisco</td>
+        <td><button  type="button" id="button2"  onclick="jobApply()"  class="btn btn-sm">Apply Now</button></td>
+      </tr>
+    </tbody>
+  </table> <br><br> 
+  <h2>Product & Design</h2><br>
+                 <p style="color: grey;">Put your creative ideas into action at a product-driven and design-led organization. Our Product organization includes a collaborative mix of teams across Product Management, Product Design, Brand Design, and Experience Research.</p> 
+<br><br>
+  <h5>Product Design</h5><br>  
+             <table class="table">
+    <tbody>
+      <tr>
+        <td>Lead Product Designer, Revenue Growth</td>
+        <td>Vancouver, BC,New York City</td>
+        <td><button  type="button" id="button2" onclick="jobApply()" class="btn btn-sm">Apply Now</button></td>
+      </tr>
+      <tr>
+        <td>Product Designer, Mobile</td>
+        <td>San Francisco</td>   
+        <td><button  type="button" id="button2" onclick="jobApply()" class="btn btn-sm">Apply Now</button></td>   
+      </tr>
+      <tr>
+        <td>Product Design Manager, Clarity</td>
+        <td>San Francisco</td>
+        <td><button  type="button" id="button2" onclick="jobApply()" class="btn btn-sm">Apply Now</button></td>
+      </tr>
+    </tbody>
+  </table><br>
+    <h5>Product Management</h5> <br> 
+             <table class="table">
+    <tbody>
+      <tr>
+        <td>Product Manager</td>
+        <td>Vancouver, BC,New York City</td>
+        <td><button  type="button" id="button2" onclick="jobApply()" class="btn btn-sm">Apply Now</button></td>
+      </tr>
+      <tr>
+        <td>Product Manager, Content Experiences</td>
+        <td>San Francisco</td>   
+        <td><button  type="button" id="button2" onclick="jobApply()" class="btn btn-sm">Apply Now</button></td>   
+      </tr>
+      <tr>
+        <td>Product Manager, Mobile Core</td>
+        <td>San Francisco</td>
+        <td><button  type="button" id="button2" onclick="jobApply()" class="btn btn-sm">Apply Now</button></td>
+      </tr>
+    </tbody>
+  </table><br><br>
+
+
+
+  <h2>Business & Marketing</h2><br>
+                 <p style="color: grey;">Build and grow the business, and work with our incredible customers all over the world. Our Business organization includes Sales, Customer Success, Marketing, User Operations, Business Technology, and Web Developmen.</p> 
+
+  <h5>Business Strategy</h5>  <br>
+             <table class="table">
+    <tbody>
+      <tr>
+        <td>Monetization Strategy Lead</td>
+        <td>San Francisco</td>   
+        <td><button  type="button" id="button2"  onclick="jobApply()"class="btn btn-sm">Apply Now</button></td>   
+      </tr>
+      <tr>
+    </tbody>
+  </table><br>
+   <h5>Business Technology</h5><br>  
+             <table class="table">
+    <tbody>
+      <tr>
+        <td>Business Intelligence Manager</td>
+        <td>New York City</td>
+        <td><button  type="button" id="button2"onclick="jobApply()" class="btn btn-sm">Apply Now</button></td>
+      </tr>
+      <tr>
+        <td>Business Systems Analyst - Procurement to Pay Applications</td>
+        <td>San Francisco</td>   
+        <td><button  type="button" id="button2" onclick="jobApply()" class="btn btn-sm">Apply Now</button></td>   
+      </tr>
+      <tr>
+        <td>Google Analytics Manager</td>
+        <td>San Francisco</td>
+        <td><button  type="button" id="button2"  onclick="jobApply()"class="btn btn-sm">Apply Now</button></td>
+      </tr>
+       <tr>
+        <td>Head of Technical Program Management- Business Technology</td>
+        <td>San Francisco</td>
+        <td><button  type="button" id="button2" onclick="jobApply()" class="btn btn-sm">Apply Now</button></td>
+      </tr>
+    </tbody>
+  </table>
+        </div>
+     
+
+  <div class="first fl ">
+      	<div class="word">
+          <p>Asana.blog</p>
+      		<hr class="hrs">
+      		<p class="topP">The place where you can find motivation,registration to trainings, useful advice from famous people, who achieve they goals! And become one of them!</p>
+         <a href="index.html" style="text-decoration: none;color: black;"><button  type="button" id="button2" class="btn btn-sm">Go To Blog!</button></a>   
+      	</div>
+      	<div class="img" id="obj">
+      		<object data="index.html" width="500" height="600">
+            <br>
+        </div>
+
+   </div> 
+    
+</body>
+
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="web11.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+	
+      function sub(){
+    	var at = document.getElementById("b1").value.indexOf("@");
+    	if (at == -1) {
+        alert("Not a valid e-mail!");
+        }else{
+    	alert("We successfully subscribed!");
+    	document.getElementById("b1").value = "";}
+    }
+    var d;
+
+     function mouseover(id){
+     	
+     	if(document.getElementById(id).style.boxShadow == "lightblue 10px 10px 10px"){
+     		d=false;
+     	}else{ d=true;document.getElementById(id).style.boxShadow = "10px 20px 20px black";}
+         
+
+    }
+    function mouseout(id){
+    if(d==true){
+    document.getElementById(id).style.boxShadow = "0px 0px 0px black";	
+    }
+
+    }
+    function oncl(id){
+    d=false;
+    document.getElementById(id).style.boxShadow = "10px 10px 10px lightblue";	
+    }
+
+</script>
+	
+</head>
+<body>
+
+
+      <div class="inContainer">
+	           <div><img src="ass.png" height="27px" width="180px"></div>
+	           <div class="button12"><a href="index.html"><button  type="button" id="button2" class="btn btn-sm">Log Out</button></a> </div>
+      </div>
+      <script>
+      	function p1(){
+      		window.open("AsanaP1.html");
+      	}
+      	function p2(){
+      		window.open("AsanaP2.html");
+      	}function p3(){
+      		window.open("AsanaP3.html");
+      	}
+      	function p4(){
+      		window.open("AsanaP4.html");
+      	}function p5(){
+      		window.open("AsanaP5.html");
+      	}
+      	function p6(){
+      		window.open("AsanaP6.html");
+      	}
+      	function p7(){
+      		window.open("AsanaP7.html");
+      	}
+	
+</script>
+
+<div class="Container1" >
+      <div class="inContainer1" >
+
+	      <div class="class1" id="shadow" onmouseover="mouseover(this.id)" onmouseout="mouseout(this.id)" onclick="oncl(this.id)">
+		        <div id="c1" onclick="p1()">
+			       <p><h4>4 problems with bug tracking and customer feedback(and how to solve them)</h4></p>
+			       <p class="some">Oct 10.2018</p>
+			       <p  id="vw" >For product teams, developing a long-
+			       term roadmap and launching new products and featurse are just one part of the job.But once they've shipped new products... </p>
+			   </div>
+
+		       <div id="c2" class="some"><div id="c12"><h6>Best Practices</h6></div>
+			         <div id="c22"><i class="fa fa-comment-o" style="color: lightgrey;"></i>
+			         <p>0</p>
+			         <p id="id1">31</p>
+			         <p>Shares</p></div>
+			   </div>
+	      </div>
+	      <div class="two1">
+         
+	      <div class="class31 some1 prof" id="ch23" onmouseover="mouseover(this.id)" onmouseout="mouseout(this.id)"><hr id="class3">
+	      	<div class="w"><p>User:</p><h6 id="FName" class="ch6">Name</h6></div><hr class="hrc">
+	      	<div class="w"><p>Birhday:</p><h6 id="bd"  class="ch6">Bday</h6></div><hr  class="hrc">
+		    <div class="w"><p>Emil:</p><h6 id="Email"  class="ch6">email</h6></div><hr  class="hrc">
+		    <div class="w"><p>PhonNumber:</p><h6 id="PhonNumber"  class="ch6"s>contact</h6></div><hr  class="hrc"> 
+	      </div>
+	       <div class="class21 some1" id="ch24" onmouseover="mouseover(this.id)" onmouseout="mouseout(this.id)"> <hr id="class2">
+                  <h5>Subscribe to Training</h5>
+                  <p>Training topic is 'Time managment'<br> 2020.12.30</p>
+                  <input  type="text" name="email"  id="b1" ></input>
+                  <button type="button" id="b2" class="btn" onclick="sub()">Subscribe</button>
+	      </div>
+	   </div>
+     </div>
+
+<div class="inContainer2" >
+	<div  onclick="p2()">
+	<div class="cont2 Product" id="sh"  onmouseover="mouseover(this.id)" onmouseout="mouseout(this.id)" onclick="oncl(this.id)">
+		<img src="fin.jpg" width="275px" height="200px">
+		<p><h5>Find your important work quickly with Homepage and...</h5></p>
+			<p class="some">Oct 23.2018</p>
+			<div class="some2"><p   style="font-size: 16px;">Finding the information you need, when you need it can be time-consuming. Especially when works is happening in many place like email threads, chat... </p>
+			</div><hr>
+			<div class="cont22 some">
+				 <div><h6>Product</h6></div>
+				 <div><i class="fa fa-comment-o" style="color: lightgrey;"></i></div>
+			     <div><p>27</p></div>
+			     <div><p id="id1">4</p></div>
+			     <div><p>Shares</p></div>
+			</div>
+         </div>
+	</div>
+   <div onclick="p3()">
+	<div class="cont2 Community" id="sh1" onmouseover="mouseover(this.id)" onmouseout="mouseout(this.id)" onclick="oncl(this.id)">
+		<img src="em.jpg" width="275px" height="200px">
+		<p><h5>Asana Together in Toronto: 6 secrets to empower yo...</h5></p>
+			<p class="some">Oct 12.2018</p>
+			<div class="some2"><p  style="font-size: 16px;">The "Asana Together World Tour" continued by kicking off October with our Toronto stop. Over 50 Asana Community members gathered at Bitmaker...</p></div>
+			<hr>
+		<div class="cont22 some">
+				 <div><h6>Community</h6></div>
+				 <div><i class="fa fa-comment-o" style="color: lightgrey;"></i></div>
+			     <div><p>1</p></div>
+			     <div><p id="id1">10</p></div>
+			     <div><p>Shares</p></div>
+			</div>
+	</div>
+</div>
+    <div onclick="p4()">
+	<div class="cont2 Community" id="sh2" onmouseover="mouseover(this.id)" onmouseout="mouseout(this.id)" onclick="oncl(this.id)">
+		<img src="LA.jpg" width="275px" height="200px">
+		<p><h5>Asana Together in Los Angeles: 5 trips for masterin...</h5></p>
+			<p class="some">Oct 05.2018</p>
+			<div class="some2" ><p  style="font-size: 16px;">This month,we kicked off the Asana Together World Tour, where our Asana Together team will visit cities around the world, meeting our community of...</p>
+			</div><hr>
+		<div class="cont22 some">
+				 <div><h6>Community</h6></div>
+				 <div><i class="fa fa-comment-o" style="color: lightgrey;"></i></div>
+			     <div><p>0</p></div>
+			     <div><p id="id1">19</p></div>
+			     <div><p>Shares</p></div>
+			</div>
+
+	</div>
+</div>
+   <div onclick="p5()">
+	<div class="cont2 Product" id="sh3" onmouseover="mouseover(this.id)" onmouseout="mouseout(this.id)" onclick="oncl(this.id)">
+		<img src="Asana.jpg" width="275px" height="200px">
+		<p><h5>Introducing Asana for Outlook: turn email into ac...</h5></p>
+			<p class="some">Oct 04.2018</p>
+			<div class="some2" ><p  style="font-size: 16px;">When working with people on different teams or outside of your organization, such as agencies, vendors, and contractors-you probably try to...</p>
+			</div><hr>
+		<div class="cont22 some">
+				 <div><h6>Product</h6></div>
+				 <div><i class="fa fa-comment-o" style="color: lightgrey;"></i></div>
+			     <div><p>43</p></div>
+			     <div><p id="id1">39</p></div>
+			     <div><p>Shares</p></div>
+			</div>
+	</div>
+</div>
+    <div onclick="p6()">
+	<div class="cont2 Best Practices" id="sh4" onmouseover="mouseover(this.id)" onmouseout="mouseout(this.id)" onclick="oncl(this.id)">
+		<img src="plan.jpg" width="275px" height="200px">
+		<p><h5>6 trips and a template to plan your best sprints...</h5></p>
+			<p class="some">Oct 03.2018</p>
+			<div class="some2"><p   style="font-size: 16px;">Maby product teams have turned to Agile sprints to manage fast, efficient production cycles-that's the promise of Agile-but that's only if...</p>
+			</div><hr>
+		<div class="cont22 some">
+				 <div><h6>Best Practices</h6></div>
+				 <div><i class="fa fa-comment-o" style="color: lightgrey;"></i></div>
+			     <div><p>0</p></div>
+			     <div><p id="id1">18</p></div>
+			     <div><p>Shares</p></div>
+			</div>
+	</div>
+</div>
+  <div onclick="p7()">
+	<div class="cont2 Comunity" id="sh5" onmouseover="mouseover(this.id)" onmouseout="mouseout(this.id)" onclick="oncl(this.id)">
+		<img src="Seatle.jpg" width="275px" height="200px">
+		<p><h5>Asana Together in Seattle: 3 perspective on teamw...</h5></p>
+			<p class="some">Sep 28.2018</p>
+			<div class="some2" ><p  style="font-size: 15px;">Asana is on the road for our first-ever "Asana Together World Tour." The world tour is a series of events for anyone interested in learning how...</p>
+			</div><hr>
+		<div class="cont22 some">
+				 <div><h6>Comunity</h6></div>
+				 <div><i class="fa fa-comment-o" style="color: lightgrey;"></i></div>
+			     <div><p>0</p></div>
+			     <div><p id="id1">2</p></div>
+			     <div><p>Shares</p></div>
+			</div>
+	</div>
+</div>
+</div></div>
+<div  class="lastC">
+	<div><a href="AsanaCom.html"><p>Asana.com</p></a></div>
+	<div><a href="AsanaCom.html#prod"><p>Product</p></a></div>
+	<div><svg width="70" height="70">
+		<circle cx="35" cy="10" r="10" stroke="hsla(0, 0%, 60%,0.1)" fill="hsla(0, 0%, 60%,0.3)"></circle>
+		<circle cx="22" cy="32" r="10" stroke="hsla(0, 0%, 60%,0.1)" fill="hsla(0, 0%, 60%,0.3)"></circle>
+        <circle cx="48" cy="32" r="10" stroke="hsla(0, 0%, 60%,0.1)" fill="hsla(0, 0%, 60%,0.3)"></circle>
+	</svg></div>
+	<div><a href="AsanaCom.html#j"><p>Jobs</p></a></div>
+	<div><a href="AsanaCom.html#assup"><p>Support</p></a></div>
+
+</div>
+<div id="overlay">
+<div id="rec">
+
+<div id="flip">
+<div id="flip21" style=" background-color:rgba(166, 216, 222, 0.79); width:350px;height: 30px;font-size: 0px;color: #0278ae;" ><b onclick="sh()">ACHIEVE YOUR GOAL WITH US & CLICK</b><div id="cl" style="margin-left: 325px; margin-top: -23px; width: 30px;height: 30px;"><i  class="
+fa fa-close" ></i></div>
+	<div id="flipLast"><div id="know">
+		<div id="s1"></div>
+		<div id="s2"></div>
+		<div id="s3"></div>
+		<div id="s4"></div>
+	</div>
+
+	<div style="background-color: white;"><b >
+    if you don't want to miss our posts and registrations for training <a href="#overlay1" style ="color: blue;"onclick="overOn()">sign up</a></b></div>
+</div></div>
+<div id="flip1">
+<div id="div1" class="dive" style="background-color:#f39233; width:300px; height:290px;color: #a20a0a;">The palce where you can</div>
+<div id="div2" class="dive" style="background-color:#fcf876; width:0px; height:0px; margin-left:47px;margin-top:-10px; color: #a20a0a;">SaveTime</div>
+<div id="div3" class="dive" style="background-color:#3797a4; width:0px; height:0px;margin-left:107px;margin-top:-10px;">GetMotivation</div>
+<div id="div4" class="dive" style="background-color:#8ccbbe; width:0px; height:0px;margin-left:179px;margin-top:-10px;">NewEmotion!</div>
+</div></div></div></div>
+</body>
+</html>

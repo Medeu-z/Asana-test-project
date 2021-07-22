@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="web11.css">
+  
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+   
+	$(document).ready(function(){
+	$("#flip").hide();
+	$(".cont2").click(function(){
+		    	 $("#overlay").show();
+    $("#flip").show();
+    var element = $(".dive");
+    $({degrees: 0}).animate({degrees: 360}, {
+    duration: 2000,step: function(now) {
+    element.css({ transform: 'rotate(' + now + 'deg)' });}}); 
+    $(".dive").animate({height: '80.1px', width: '120.5px'});
+    $(".dive").animate({height: '100.1px', width: '150.5px',fontSize: '22px', color: "#fff"});
+    $(".dive").animate({height: '80.1px', width: '120.5px',fontSize: '19px'});    
+            $("#div1").fadeTo(5000,0);
+            $("#div2").fadeTo(5600,0);
+            $("#div3").fadeTo(6200,0);
+            $("#div4").fadeTo(6800,0);
+    $("#flip1").delay(6000).slideUp();
+    $("#flip21").delay(6000).animate({fontSize: '1em'}, "slow");});});
+	$(document).ready(function(){
+    $(".dive").click(function(){ $(".dive").stop();});});
+    function sh(){
+  	$("#flipLast").slideDown();
+  	$("#s1").fadeOut(800);
+    $("#s2").fadeOut(1500);
+    $("#s3").fadeOut(3000);
+    $("#s4").fadeOut(4500);
+    $("#s1").fadeIn(6000);
+    $("#s2").fadeIn(7500);
+    $("#s3").fadeIn(9000);
+    $("#s4").fadeIn(10500);
+    }
+    $(document).ready(function(){
+    $("#cl").click(function(){ $("#flip").slideUp();$("#overlay").toggle();});});
+
+    function overOn(){
+    	 $("#overlay1").show();
+    	 $("#overlay").hide();
+    }
+    function overlog(){
+    	 $("#overlayLog").show();
+    	
+    }
+    function overOfflog(){
+    		 $("#overlayLog").hide();
+    }
+     function overOff(){
+     	$("#overlay1").toggle();
+
+    } function overA(){
+    	$("#overlay1").toggle();
+    	alert("We successfully subscribed! Wellcom to our blog!");
+    }
+    var d;
+
+     function mouseover(id){
+     	
+     	if(document.getElementById(id).style.boxShadow == "lightblue 10px 10px 10px"){
+     		d=false;
+     	}else{ d=true;document.getElementById(id).style.boxShadow = "10px 20px 20px black";}   
+
+    }
+
+    function mouseout(id){
+    if(d==true){
+    document.getElementById(id).style.boxShadow = "0px 0px 0px black";	
+    }
+    }
+
+    function oncl(id){
+   	alert("To visit this page you must to Log in or Sing Up!");
+    } 
+
+    function onclickP() {
+    var togglePassword = document.querySelector('#togglePassword');
+    var password = document.querySelector('#pwd');
+    var type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+     }
+
+    function sub(){
+    	var at = document.getElementById("b1").value.indexOf("@");
+    	if (at == -1) {
+        alert("Not a valid e-mail!");
+        }else{
+    	alert("We successfully subscribed! We will send the lates posts in your account!");
+    	document.getElementById("b1").value = "";}
+    }
+    function s(){
+    	var at = document.getElementById("em").value.indexOf("@");
+    	var em = document.getElementById("em").value;
+    	var name = document.getElementById("fn").value;
+    	var bd = document.getElementById("bd").value;
+    	var pn = document.getElementById("pn").value;
+    	var pwd = document.getElementById("pwd").value;
+    	if (at == -1 && em.length!=0 && name.length!=0 && bd.length!=0 && pn.length!=0&&pwd.length!=0) {
+             alert("Not a valid e-mail! Please try again!");
+         }else if(em.length == 0 || name.length==0||bd.length==0||pn.length==0||pwd.length==0){
+         	alert("Please fill all forms !");
+
+         }else{
+    	alert("We successfully subscribed! We will send the lates posts in your account!");
+        document.getElementById("em").value="";
+    	document.getElementById("fn").value="";
+    	document.getElementById("bd").value="";
+    	document.getElementById("pn").value="";
+        document.getElementById("pwd").value="";
+        $("#overlay1").toggle();
+          var link = document.getElementById("l");
+          var att = document.createAttribute("href");
+             att.value = "AsanaProfile.html";
+             link.setAttributeNode(att);
+
+    }
+    }
+      function l(){
+    	var at = document.getElementById("ema").value.indexOf("@");
+    	var em = document.getElementById("ema").value;
+    	var pwd = document.getElementById("pw").value;
+    	if (at == -1 && em.length!=0 && pwd.length!=0) {
+             alert("Not a valid e-mail! Please try again!");
+         }else if(em.length == 0 || pwd.length==0){
+         	alert("Please fill all forms !");
+
+         }else{
+        document.getElementById("ema").value="";
+        document.getElementById("pw").value="";
+        $("#overlayLog").hide();
+          var link = document.getElementById("link");
+          var att = document.createAttribute("href");
+             att.value = "AsanaProfile.html";
+             link.setAttributeNode(att);
+
+    }
+    }
+    
+</script>
+	
+
+	
+    
+</head>
+<body>
+
+
+      <div class="inContainer">
+	           <div><img src="ass.png" height="27px" width="180px"></div>
+	           <div class="button12"><button  type="button" class="btn btn-sm button1" onclick="overOn()">Sign Up</button>
+	           <button  type="button" id="button2" class="btn btn-sm" onclick="overlog()">Log in</button>
+	           </div>
+      </div><script>
+	
+</script>
+<div class="Container1">
+      <div class="inContainer1" >
+	      <div class="class1" id="shadow" onmouseover="mouseover(this.id)" onmouseout="mouseout(this.id)" onclick="oncl(this.id)">
+		        <div id="c1">
+			       <p><h4>4 problems with bug tracking and customer feedback(and how to solve them)</h4></p>
+			       <p class="some">Oct 10.2018</p>
+			       <p  id="vw" >For product teams, developing a long-
+			       term roadmap and launching new products and featurse are just one part of the job.But once they've shipped new products... </p>
+			   </div>
+
+		       <div id="c2" class="some"><div id="c12"><h6>Best Practices</h6></div>
+			         <div id="c22"><i class="fa fa-comment-o" style="color: lightgrey;"></i>
+			         <p>0</p>
+			         <p id="id1">31</p>
+			         <p>Shares</p></div>
+			   </div>
+	      </div>
+	      <div class="two">
+          <div  style="margin-bottom: 10px;"class="class2 some1" id="ch21" onmouseover="mouseover(this.id)" onmouseout="mouseout(this.id)" > <hr id="class2">
+                  <h5>Subscribe to our blog</h5>
+                  <p>Get the latest posts in your email</p>
+                  <input  type="text" name="email"  id="b1" ></input>
+                  <button type="button" id="b2" class="btn" onclick="sub()" >Subscribe</button>
+	      </div>
+	      <div class="class3 some1" id="ch22" onmouseover="mouseover(this.id)" onmouseout="mouseout(this.id)" ><hr id="class3">
+		          <h5 style="margin-left: -13px;">Get Your Guide</h5>
+                  <p style="margin-left: -20px;">To now more about asana.com and asana.blog</p>
+                  <button type="button" id="b3" class="btn"style="margin-left: -13px;" onclick="getg()" >Get Your Guide</button>
+	      </div></div>
+     </div>
+<script>
+	function getg(){
+		alert("The guide will contact with you, please wait the messages in your email !");
+	}
+</script>
+<div class="inContainer2" >
+	<div class="cont2 Product" id="sh" onmouseover="mouseover(this.id)" onmouseout="mouseout(this.id)" onclick="oncl(this.id)">
+		<img src="fin.jpg" width="275px" height="200px">
+		<p><h5>Find your important work quickly with Homepage and...</h5></p>
+			<p class="some">Oct 23.2018</p>
+			<div class="some2"><p   style="font-size: 16px;">Finding the information you need, when you need it can be time-consuming. Especially when works is happening in many place like email threads, chat... </p>
+			</div><hr>
+			<div class="cont22 some">
+				 <div><h6>Product</h6></div>
+				 <div><i class="fa fa-comment-o" style="color: lightgrey;"></i></div>
+			     <div><p>27</p></div>
+			     <div><p id="id1">4</p></div>
+			     <div><p>Shares</p></div>
+			</div>
+
+	</div>
+
+	<div class="cont2 Community" id="sh1" onmouseover="mouseover(this.id)" onmouseout="mouseout(this.id)" onclick="oncl(this.id)">
+		<img src="em.jpg" width="275px" height="200px">
+		<p><h5>Asana Together in Toronto: 6 secrets to empower yo...</h5></p>
+			<p class="some">Oct 12.2018</p>
+			<div class="some2"><p  style="font-size: 16px;">The "Asana Together World Tour" continued by kicking off October with our Toronto stop. Over 50 Asana Community members gathered at Bitmaker...</p></div>
+			<hr>
+		<div class="cont22 some">
+				 <div><h6>Community</h6></div>
+				 <div><i class="fa fa-comment-o" style="color: lightgrey;"></i></div>
+			     <div><p>1</p></div>
+			     <div><p id="id1">10</p></div>
+			     <div><p>Shares</p></div>
+			</div>
+	</div>
+
+
+	<div class="cont2 Community" id="sh2" onmouseover="mouseover(this.id)" onmouseout="mouseout(this.id)" onclick="oncl(this.id)">
+		<img src="LA.jpg" width="275px" height="200px">
+		<p><h5>Asana Together in Los Angeles: 5 trips for masterin...</h5></p>
+			<p class="some">Oct 05.2018</p>
+			<div class="some2" ><p  style="font-size: 16px;">This month,we kicked off the Asana Together World Tour, where our Asana Together team will visit cities around the world, meeting our community of...</p>
+			</div><hr>
+		<div class="cont22 some">
+				 <div><h6>Community</h6></div>
+				 <div><i class="fa fa-comment-o" style="color: lightgrey;"></i></div>
+			     <div><p>0</p></div>
+			     <div><p id="id1">19</p></div>
+			     <div><p>Shares</p></div>
+			</div>
+
+	</div>
+
+
+	<div class="cont2 Product" id="sh3" onmouseover="mouseover(this.id)" onmouseout="mouseout(this.id)" onclick="oncl(this.id)">
+		<img src="Asana.jpg" width="275px" height="200px">
+		<p><h5>Introducing Asana for Outlook: turn email into ac...</h5></p>
+			<p class="some">Oct 04.2018</p>
+			<div class="some2" ><p  style="font-size: 16px;">When working with people on different teams or outside of your organization, such as agencies, vendors, and contractors-you probably try to...</p>
+			</div><hr>
+		<div class="cont22 some">
+				 <div><h6>Product</h6></div>
+				 <div><i class="fa fa-comment-o" style="color: lightgrey;"></i></div>
+			     <div><p>43</p></div>
+			     <div><p id="id1">39</p></div>
+			     <div><p>Shares</p></div>
+			</div>
+	</div>
+
+
+	<div class="cont2 Best Practices" id="sh4" onmouseover="mouseover(this.id)" onmouseout="mouseout(this.id)" onclick="oncl(this.id)">
+		<img src="plan.jpg" width="275px" height="200px">
+		<p><h5>6 trips and a template to plan your best sprints...</h5></p>
+			<p class="some">Oct 03.2018</p>
+			<div class="some2"><p   style="font-size: 16px;">Maby product teams have turned to Agile sprints to manage fast, efficient production cycles-that's the promise of Agile-but that's only if...</p>
+			</div><hr>
+		<div class="cont22 some">
+				 <div><h6>Best Practices</h6></div>
+				 <div><i class="fa fa-comment-o" style="color: lightgrey;"></i></div>
+			     <div><p>0</p></div>
+			     <div><p id="id1">18</p></div>
+			     <div><p>Shares</p></div>
+			</div>
+	</div>
+
+
+	<div class="cont2 Comunity" id="sh5" onmouseover="mouseover(this.id)" onmouseout="mouseout(this.id)" onclick="oncl(this.id)">
+		<img src="Seatle.jpg" width="275px" height="200px">
+		<p><h5>Asana Together in Seattle: 3 perspective on teamw...</h5></p>
+			<p class="some">Sep 28.2018</p>
+			<div class="some2" ><p  style="font-size: 15px;">Asana is on the road for our first-ever "Asana Together World Tour." The world tour is a series of events for anyone interested in learning how...</p>
+			</div><hr>
+		<div class="cont22 some">
+				 <div><h6>Comunity</h6></div>
+				 <div><i class="fa fa-comment-o" style="color: lightgrey;"></i></div>
+			     <div><p>0</p></div>
+			     <div><p id="id1">2</p></div>
+			     <div><p>Shares</p></div>
+			</div>
+	</div>
+</div>
+<div id="overlay1" class="overlay1" >
+	<div style="width: 88%;background-color: white;rotate:5px; border-radius: 5%; padding:10px 20px;">
+		<h3 style=" font-family:sans-serif;text-align: center;">Wellcom</h3><i  class="
+fa fa-close" style="color: black; float: right;" onclick="overOff()" ></i>
+		<hr style="background-color:#4F1AC6; height: 0.5px; margin-top: -5px; ">
+		<div class="w"><p>Full Name:</p><input style="width: 50%;"type="text" id= "fn"name="fullname"></div>
+		<div class="w"><p>BirthDay:</p><input style="width: 50%;"type="date" id="bd" name="bday" min="1940-01-01" max="2021-01-01"></div>
+
+		<div class="w"><p>PhonNumber:</p><input style="width: 50%;" type="text" id="pn"name="phonNumber" maxlength="9"></div>
+		
+		Choose one of them: <input type="radio" name="Orator"> Orator
+		                    <input type="radio" name="reader"> Reader<br>
+		                    <div class="w"><strong>Note:</strong> Do not forget '<b>@</b>' when you will fill email form.</div><br>
+		<div class="w"><p>Emil:</p><input style="width: 50%;" type="email" id="em" name="email"></div>
+		<div class="w"><p>Select: </p><select style="margin-left: 11px;"><option></option><option>Male</option><option>Female</option></select></div>
+		<div class="w" style="margin-top: 10px;"><p>Password:</p><input style="width: 50%;" type="text" id="pwd" name="pwd" required><i class="fa fa-eye" id="togglePassword" onclick="onclickP()"></i></div>
+		<br><input type="checkbox" name="checkbox"> Remind each post by email.
+        <button  type="button" class="btn btn-sm"  onclick="s()" style="background-color: #4F1AC6;color: white;margin-left: 50px;"><a id="l">Sign Up</a></button>
+      
+	</div>
+
+
+</div>
+
+<div id="overlayLog" class="overlay2" >
+	<div style="width: 80%;background-color: white;rotate:5px; border-radius: 15px; padding:10px 20px;">
+		<h3 style=" font-family:sans-serif;text-align: center;">Wellcom</h3><i  class="
+fa fa-close" style="color: black; float: right;" onclick="overOfflog()" ></i>
+		<hr style="background-color:#4F1AC6; height: 0.5px; margin-top: -5px; ">
+		<div class="w" style="display: flex;flex-wrap: wrap;"><p>Emil:</p><input style="width: 50%;" type="email" id="ema" name="email"></div>
+		<div class="w" style="margin-top: 10px;display: flex;flex-wrap: wrap;"><p>Password:</p><input style="width: 50%;" type="password" id="pw" name="pwd" required></div>
+        <button  type="button" class="btn btn-sm"  onclick="l()" style="background-color: #4F1AC6;color: white;margin-left: 50px;"><a id="link">Log in</a></button>
+      
+	</div>
+
+
+</div>
+</div>
+<div  class="lastC">
+	<div><a href="AsanaCom.html"><p>Asana.com</p></a></div>
+	<div><a href="AsanaCom.html#prod"><p>Product</p></a></div>
+	<div><svg width="70" height="70">
+		<circle cx="35" cy="10" r="10" stroke="hsla(0, 0%, 60%,0.1)" fill="hsla(0, 0%, 60%,0.3)"></circle>
+		<circle cx="22" cy="32" r="10" stroke="hsla(0, 0%, 60%,0.1)" fill="hsla(0, 0%, 60%,0.3)"></circle>
+        <circle cx="48" cy="32" r="10" stroke="hsla(0, 0%, 60%,0.1)" fill="hsla(0, 0%, 60%,0.3)"></circle>
+	</svg></div>
+	<div><a href="AsanaCom.html#j"><p>Jobs</p></a></div>
+	<div><a href="AsanaCom.html#assup"><p>Support</p></a></div>
+
+</div>
+<div id="overlay">
+<div id="rec">
+
+<div id="flip">
+<div id="flip21" style=" background-color:rgba(166, 216, 222, 0.79); width:350px;height: 30px;font-size: 0px;color: #0278ae;" ><b onclick="sh()">ACHIEVE YOUR GOAL WITH US & CLICK</b><div id="cl" style="margin-left: 325px; margin-top: -23px; width: 30px;height: 30px;"><i  class="
+fa fa-close" ></i></div>
+	<div id="flipLast"><div id="know">
+		<div id="s1"></div>
+		<div id="s2"></div>
+		<div id="s3"></div>
+		<div id="s4"></div>
+	</div>
+
+	<div style="background-color: white;"><b >
+    if you don't want to miss our posts and registrations for training <a href="#overlay1" style ="color: blue;"onclick="overOn()">sign up</a></b></div>
+</div></div>
+<div id="flip1">
+<div id="div1" class="dive" style="background-color:#f39233; width:300px; height:290px;color: #a20a0a;">The palce where you can</div>
+<div id="div2" class="dive" style="background-color:#fcf876; width:0px; height:0px; margin-left:47px;margin-top:-10px; color: #a20a0a;">SaveTime</div>
+<div id="div3" class="dive" style="background-color:#3797a4; width:0px; height:0px;margin-left:107px;margin-top:-10px;">GetMotivation</div>
+<div id="div4" class="dive" style="background-color:#8ccbbe; width:0px; height:0px;margin-left:179px;margin-top:-10px;">NewEmotion!</div>
+</div></div></div></div>
+</body>
+</html>
